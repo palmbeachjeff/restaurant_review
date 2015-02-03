@@ -1,0 +1,12 @@
+<h1> Church Street District Restaurants </h1>
+
+<p> Here are places I've eaten downtown, and enjoyed and/or gotten food poisoning from.</p>
+
+<ul>
+	<% @restaurants.each do |restaurant| %>
+    <li> <%= link_to restaurant.name, restaurant %> </li> 
+    <% end %>
+</ul>
+
+<%= link_to 'Add a new restaurant', new_restaurant_path %>
+
